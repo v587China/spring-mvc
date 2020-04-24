@@ -9,24 +9,11 @@
         <property name="mappings">
             <props>
                 <prop key="/hello">helloController</prop>
-                <prop key="/multi/*">helloMultiActionController</prop>
-
             </props>
         </property>
     </bean>
+
     <bean id="helloController" class="com.ultra.web.HelloController"/>
-
-    <bean id="helloMultiActionController" class="com.ultra.web.HelloMultiActionController">
-        <property name="methodNameResolver" ref="methodNameResolver"/>
-    </bean>
-    <bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
-        <property name="mappings">
-            <props>
-                <prop key="/multi/hello">hello</prop>
-                <prop key="/multi/hi">hi</prop>
-            </props>
-        </property>
-    </bean>
 
     <!--使用@Controller注解需要的配置-->
     <context:component-scan base-package="com.ultra.web"/>

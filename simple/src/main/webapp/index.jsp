@@ -12,9 +12,7 @@
 </head>
 <body>
 <a href="/simple/hello">hello</a><br><br>
-<a href="/simple/plain/annotation">plain ordinary using annotation</a><br><br>
-<a href="/simple/plain/xml">plain ordinary using xml</a><br><br>
-<a href="/simple/multi/hello">hello multi</a><br><br>
-<a href="/simple/multi/hi">hi multi</a><br><br>
+<a href="/simple/plain/hello">plain ordinary hello</a><br><br>
+<a href="/simple/plain/hi">plain ordinary hi</a><br><br>
 </body>
 </html>
